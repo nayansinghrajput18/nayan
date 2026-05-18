@@ -12,8 +12,11 @@ echo "Name: " . htmlspecialchars($name) . "<br>";
 echo "Email: " . htmlspecialchars($email) . "<br>";
 echo "Age: " . htmlspecialchars($age) . "<br>";
 } else { 
-
+  echo"No data submitted.",
+}
 ?>
+
+// html
 <!DOCTYPE html>
 <html>
 <head>
