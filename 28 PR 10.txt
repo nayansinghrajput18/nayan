@@ -1,4 +1,4 @@
-1. 
+//1 php
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -6,17 +6,16 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $age = $_POST['age'];
 
-
 echo "<h2>Form Data Received:</h2>";
 echo "Name: " . htmlspecialchars($name) . "<br>"; 
 echo "Email: " . htmlspecialchars($email) . "<br>";
 echo "Age: " . htmlspecialchars($age) . "<br>";
 } else { 
-  echo"No data submitted.",
+  echo"No data submitted.";
 }
 ?>
 
-// html
+// 2 html
 <!DOCTYPE html>
 <html>
 <head>
@@ -24,7 +23,7 @@ echo "Age: " . htmlspecialchars($age) . "<br>";
 </head>
 <body>
 <h2>User Form</h2>
-<form method="POST" action="">
+<form method="POST" action="process.php">
 Name: <input type="text" name="name"><br><br>
 Email: <input type="email" name="email"><br><br>
 Age: <input type="number" name="age"><br><br>
@@ -33,6 +32,3 @@ Age: <input type="number" name="age"><br><br>
 </form>
 </body>
 </html>
-<?php
-}
-?>
